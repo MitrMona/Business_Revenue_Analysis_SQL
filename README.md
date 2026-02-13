@@ -1,5 +1,9 @@
 # Business_Revenue_Analysis_SQL
 
+# 📊 Business Revenue Analysis (SQL)
+
+![Project Banner](BusinessAnalysis.png)
+
 📊 SQL Revenue Analysis Project
 Dataset
 
