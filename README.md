@@ -1,6 +1,6 @@
 # 📊 Business Revenue Analysis using SQL
 
-![Business Revenue Analysis](BusinessAnalysis.png)
+![Business Revenue Analysis](BusinessAnalaysisImage.png)
 
 ---
 
