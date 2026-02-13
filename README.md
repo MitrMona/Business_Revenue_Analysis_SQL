@@ -1,6 +1,6 @@
 # 📊 Business Revenue Analysis using SQL
 
-![Business Revenue Analysis](BusinessAnalaysisImage.png)
+![Business Revenue Analysis](BRA.png)
 
 ---
 
@@ -70,10 +70,10 @@ Identify major revenue-driving countries for strategic investment and focus.
 Group by country -> Sum revenue -> Sort descending -> Limit top 3.
 
 ```sql
-select billingcountry, sum(total) as total_revenue
+select BillingCountry, sum(Total) as Total_Revenue
 from invoice
-group by billingcountry
-order by total_revenue desc
+group by BillingCountry
+order by Total_Revenue desc
 limit 3;
 ```
 
@@ -88,11 +88,12 @@ Evaluate strongest customer relationships within a specific year.
 Filter by year -> Group by customer -> Sum revenue -> Rank top 5.
 
 ```sql
-select BillingCountry, sum(Total) as Total_Revenue
+select CustomerId, sum(Total) as Revenue_2022
 from invoice
-group by BillingCountry
-order by Total_Revenue desc
-limit 3;
+where year(InvoiceDate) = 2022
+group by CustomerId
+order by Revenue_2022 desc
+limit 5;
 ```
 ---
 
